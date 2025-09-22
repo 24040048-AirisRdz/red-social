@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Grupos</title>
+  <Link rel="stylesheet" href="styles/stylegrupo.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="header-left">
+      <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+      <input type="text" placeholder="Buscar en Mini Facebook">
+    </div>
+    <div class="header-center">
+      <a href="index.html" class="icon"><img src="images/home.png" alt="Inicio"></a>
+      <a href="grupos.html" class="icon"><img src="images/grupos.jpg" alt="Grupos"></a>
+      <a href="marketplace.html" class="icon"><img src="images/marketplace.png" alt="Marketplace"></a>
+    </div>
+    <div class="header-right">
+      <a href="perfil.html" class="profile">
+        <img src="images/perfil.jpg" alt="Perfil">
+        <span>Victoria</span>
+      </a>
+      <div class="icon"><img src="images/bell.png" alt="Notificaciones"></div>
+      <div class="icon"><img src="images/chat.png" alt="Mensajes"></div>
+    </div>
+  </header>
+
+  <div class="main-container">
+    <div class="sidebar">
+      <h3>Grupos</h3>
+      <a href="#">Tu feed</a>
+      <a href="#">Sugerencias</a>
+      <a href="#">Tus grupos</a>
+      <a href="#">+ Crear nuevo grupo</a>
+
+      <div class="my-groups">
+        <h4>Grupos a los que te has unido</h4>
+        <a href="#" class="group-item">
+          <img src="images/grupoventas.png" alt="Ventas Saltillo">
+          <span>Ventas Saltillo</span>
+        </a>
+        <a href="#" class="group-item">
+          <img src="images/grupomanualidades.jpg" alt="Manualidades">
+          <span>Cursos Gratis de Manualidades</span>
+        </a>
+        <a href="#" class="group-item">
+          <img src="images/grupomemes.jpg" alt="Memes">
+          <span>Memes💨</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="groups-content">
+      <section class="groups-header">
+        <h2>Grupos</h2>
+      </section>
+
+      <div class="post">
+        <h3>Ventas Saltillo</h3>
+        <p>Flores de venta inmediata 💛💛.</p>
+        <img src="images/flores.jpg" alt="Imagen del grupo ventas">
+        <button class="like-btn" onclick="darLike(this)">👍 Me gusta</button>
+      </div>
+
+      <div class="post">
+        <h3>Cursos Gratis de Manualidades</h3>
+        <p>Aprende a hacer un cojín de gatos aquí 😍.</p>
+        <img src="images/manualidades.jpg" alt="Imagen del grupo Manualidades">
+        <button class="like-btn" onclick="darLike(this)">👍 Me gusta</button>
+      </div>
+
+      <div class="post">
+        <h3>Memes💨</h3>
+        <p>Yo regresando a mi casa después de fingir sentirme mal en el trabajo</p>
+        <img src="images/memes.jpg" alt="Imagen del grupo Memes">
+        <button class="like-btn" onclick="darLike(this)">👍 Me gusta</button>
+      </div>
+    </div>
+  </div>
+  <script src="js/like.js"></script>
+  
+</body>
+</html>

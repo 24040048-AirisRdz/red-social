@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini Facebook</title>
+  <Link rel="stylesheet" href="styles/styleindex.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="header-left">
+      <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+      <input type="text" placeholder="Buscar en Mini Facebook">
+    </div>
+    <div class="header-center">
+      <a href="index.html" class="icon"><img src="images/home.png" alt="Inicio"></a>
+      <a href="grupos.html" class="icon"><img src="images/grupos.jpg" alt="Grupos"></a>
+      <a href="marketplace.html" class="icon"><img src="images/marketplace.png" alt="Marketplace"></a>
+    </div>
+    <div class="header-right">
+      <a href="perfil.html" class="profile">
+        <img src="images/perfil.jpg" alt="Perfil">
+        <span>Victoria</span>
+      </a>
+      <div class="icon"><img src="images/bell.png" alt="Notificaciones"></div>
+      <div class="icon"><img src="images/chat.png" alt="Mensajes"></div>
+    </div>
+  </header>
+
+  <section class="stories">
+    <div class="story create">
+      <img src="images/perfil.jpg" alt="Crear historia">
+      <div class="plus-icon">+</div>
+      <span>Crear historia</span>
+    </div>
+    <div class="story">
+      <img src="images/historia1.jpg" alt="Historia 1">
+      <span>Amigo1</span>
+    </div>
+    <div class="story">
+      <img src="images/historia2.jpg" alt="Historia 2">
+      <span>Amigo2</span>
+    </div>
+    <div class="story">
+      <img src="images/historia3.jpg" alt="Historia 3">
+      <span>Amigo3</span>
+    </div>
+    <div class="story">
+      <img src="images/historia4.jpg" alt="Historia 4">
+      <span>Amigo4</span>
+    </div>
+    <div class="story">
+      <img src="images/historia5.jpg" alt="Historia 5">
+      <span>Amigo5</span>
+    </div>
+  </section>
+
+  <div class="feed">
+    <div class="post">
+      <h3>Amigo7</h3>
+      <p>Descanso 😪</p>
+      <img src="images/post1.jpg" alt="Foto 1">
+      <button class="like-btn" onclick="darLike(this)">👍 Me gusta</button>
+    </div>
+    <div class="post">
+      <h3>Amigo8</h3>
+      <p>Disfrutando el fin de semana 🤗</p>
+      <img src="images/post2.jpg" alt="Foto 2">
+      <button class="like-btn" onclick="darLike(this)">👍 Me gusta</button>
+    </div>
+    <div class="post">
+      <h3>Amigo9</h3>
+      <p>😴</p>
+      <img src="images/post3.jpg" alt="Foto 3">
+      <button class="like-btn" onclick="darLike(this)">👍 Me gusta</button>
+    </div>
+    <div class="post">
+      <h3>Amigo0</h3>
+      <p>Receta deliciosa para hoy 🍓😋</p>
+      <img src="images/post4.jpg" alt="Foto 4">
+      <button class="like-btn" onclick="darLike(this)">👍 Me gusta</button>
+    </div>
+  </div>
+  <script src="js/like.js"></script>
+
+</body>
+</html>

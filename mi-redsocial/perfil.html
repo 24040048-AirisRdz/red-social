@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Perfil</title>
+  <Link rel="stylesheet" href="styles/styleperfil.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="header-left">
+      <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+      <input type="text" placeholder="Buscar en Mini Facebook">
+    </div>
+    <div class="header-center">
+      <a href="index.html" class="icon"><img src="images/home.png" alt="Inicio"></a>
+      <a href="grupos.html" class="icon"><img src="images/grupos.jpg" alt="Grupos"></a>
+      <a href="marketplace.html" class="icon"><img src="images/marketplace.png" alt="Marketplace"></a>
+    </div>
+    <div class="header-right">
+      <a href="perfil.html" class="profile">
+        <img src="images/perfil.jpg" alt="Perfil">
+        <span>Victoria</span>
+      </a>
+      <div class="icon"><img src="images/bell.png" alt="Notificaciones"></div>
+      <div class="icon"><img src="images/chat.png" alt="Mensajes"></div>
+    </div>
+  </header>
+
+  <section class="profile-header">
+    <img src="images/perfil.jpg" alt="Foto de perfil">
+    <h2>Airis Rodriguez</h2>
+    <p>💻 Estudiante </p>
+  </section>
+
+  <div class="profile-content">
+    <div class="new-post">
+      <textarea id="postText" rows="3" placeholder="¿Qué estás pensando, Victoria?"></textarea>
+      <button onclick="agregarPublicacion()">Publicar</button>
+    </div>
+    <div id="posts">
+      <div class="post">
+        <h3>Victoria Rzz</h3>
+        <p>💗</p>
+        <img src="images/post5.jpg" alt="Imagen publicación 1">
+        <button class="like-btn" onclick="darLike(this)">👍 Me gusta</button>
+      </div>
+
+      <div class="post">
+        <h3>Victoria Rzz</h3>
+        <p>My baby 💗</p>
+        <img src="images/post6.jpg" alt="Imagen publicación 2">
+        <button class="like-btn" onclick="darLike(this)">👍 Me gusta</button>
+      </div>
+
+      <div class="post">
+        <h3>Victoria Rzz</h3>
+        <p>love of my life</p>
+        <img src="images/post7.jpg" alt="Imagen publicación 3">
+        <button class="like-btn" onclick="darLike(this)">👍 Me gusta</button>
+      </div>
+
+      <div class="post">
+        <h3>Victoria Rzz</h3>
+        <p>Bebé happy</p>
+        <img src="images/post8.jpg" alt="Imagen publicación 4">
+        <button class="like-btn" onclick="darLike(this)">👍 Me gusta</button>
+      </div>
+    </div>
+  </div>
+  <script src="js/perfil.js"></script>
+
+</body>
+</html>
